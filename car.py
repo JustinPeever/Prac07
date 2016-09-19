@@ -28,5 +28,5 @@ class Car:
         self.odometer += distance
         return distance
 
-    def _str_(self):
-        print("{}, fuel={}, odometer={}".format(self.name, self.fuel, self.odometer))
+    def __str__(self):
+        return "{}, fuel={}, odometer={}".format(self.name, self.fuel, self.odometer)

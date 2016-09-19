@@ -7,14 +7,11 @@ def main():
     python = ProgrammingLanguage("Python", "Dynamic", True, 1991)
     vb = ProgrammingLanguage("Visual Basic", "Static", False, 1991)
 
-    ruby._str_()
-    python._str_()
-    vb._str_()
+    print(ruby, python, vb)
+    languages = [ruby, python, vb]
 
-    looplist = [ruby, python, vb]
-
-    for obj in looplist:
-        if obj.typing == "Dynamic":
-            print(obj.name)
+    for language in languages:
+        if language.is_dynamic():
+            print(language)
 
 main()
